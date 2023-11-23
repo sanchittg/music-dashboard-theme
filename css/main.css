@@ -1,22 +1,22 @@
 *{
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
 body{
-    font-size: 100%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    background-color: #f8f9fc;
+    min-height: 100vh;
+    overflow-x: hidden;
+    font-family: serif;
 }
-.main-section{
-    display: flex;
+ul.sidebar{
+    position: relative;
+    top: 61px;
 }
 .sidebar{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-
     height: 100vh;
     width: 16rem;
     background-color: #4e73df;
@@ -61,6 +61,13 @@ body{
 }
 .dashboard{
     color: #fff !important;
+    font-size: 14px;
+    text-decoration: none;
+}
+@media(min-width:64.1rem){
+    .dashboard{
+        font-size: 18px;
+    }
 }
 a.sidebar_list_item{
     padding: 0;
@@ -105,87 +112,105 @@ a.sidebar_list_item{
     background-color: white;
     border-radius: 10px;
 }
+/* header */
 
-/* Headers */
-.main_header{
-    float: right;
-    width: 100%;
-    background-color: #f8f9fc;
+@media(max-width:56.5rem){
+    .brandName{
+        display: none;
+    }
 }
-#logo_container img{
-    height: 30px;
-}
-.main_nav{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    background-color: white;
-    align-items: center;
-
-    height: 70px;
-    padding: 0 40px;
-}
-
-.main_nav_list_items{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    position: relative;
-    right: 20px;
-}
-.list_item a{
-    display: flex;
-    padding-left: 5rem;
+.brandName{
+    color: #f1f1f1;
+    font-size: 2rem;
+    background: #4e73df;
+    text-align: center;
     text-decoration: none;
-    align-items: center;
+    font-weight: bold;
+    padding: 5px;
 }
-.list_item span{
-    margin-right: 1rem;
-    color: #b7b9cc;
-}
-.search_form{
-    width: 25rem;
-    margin: 0.5rem;
-}
-.search_button {
-  padding: 10px;
-  font-size: 1rem;
-  /* border: 1px solid grey; */
-  border: none;
-  float: left;
-  width: 80%;
-  background: #f1f1f1;
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-.search_button_icon_container{
+
+header{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #fff;
+    padding: 20px 40px;
     display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    height: 38.4px !important;
-    background-color: #4e73df;
-    border:2px solid #4e73df;
-    font-size: 1.5rem;
-    height: 47px;
-    width: 3rem;
-    border: none;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
 }
-.notification_bell{
+header a{
+    list-style: none;
+    text-decoration: none;
+    position: relative;
+    font-size: 18px;
     color: #b7b9cc;
-}
-.list_item_line_divider{
-    border-right: 1px solid #e3e6f0;
-    height: 34px;
-    padding: 0px 4rem;
 
 }
-.list_item{
-   list-style: none;
-   font-size: 25px;
+header .searchbar{
+    position: relative;
+    right: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 350px;
 }
+form input{
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 100%;
+    background-color: #f1f1f1;
+    color:#333 ;
+    border-radius: 7px 0 0 7px;
+    padding: 2px;
+}
+form button{
+    border: none;
+    outline: none;
+    height: 35px;
+    width: 40px;
+    color: #333;
+    border-radius: 0 7px 7px 0;
+}
+.toggle_button {
+    position: relative;
+    width: 45px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    vertical-align: middle;
+  }
+  .toggle_button_bar {
+    width: 80%;
+    height: 0.2rem;
+    display: none;
+    background: #333;
+    margin: 8px 0;
+  }
+  @media(max-width:40rem){
+    .toggle_button_bar{
+        display: block;
+    }
+    header .searchbar{
+        width: 30px;
+        right: 0;
+    }
+    form input{
+        width: 10rem;
+    }
+    .main_nav{
+        display: none;
+    }
+  }
+
+
+
+
+
+
+
+
