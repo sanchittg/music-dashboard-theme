@@ -113,7 +113,7 @@ a.sidebar_list_item{
     border-radius: 10px;
 }
 
-header{
+.main_section{
     width: calc(100% - 300px);
     height: 60px;
     margin-left: 300px;
@@ -122,10 +122,13 @@ header{
     padding: 20px 40px;
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
 }
-.main_header{
+.main_section{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    width: calc(100% - 300px);
+    
 }
 .searchbar{
     display: flex;
@@ -138,7 +141,7 @@ header{
     border: 1px solid #d7dbe6;
 }
 
-header a{
+.main_section a{
     list-style: none;
     text-decoration: none;
     position: relative;
@@ -154,35 +157,11 @@ header a{
     border: none;
     font-size:16px;
     background-color: white;
-
 }
-
-/* header .searchbar{
-    position: relative;
-    right: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 350px;
-} */
-/* form input{
-    border: none;
-    outline: none;
-    height: 35px;
-    width: 100%;
-    background-color: #f1f1f1;
-    color:#333 ;
-    border-radius: 7px 0 0 7px;
-    padding: 2px;
-} */
-/* form button{
-    border: none;
-    outline: none;
-    height: 35px;
-    width: 40px;
-    color: #333;
-    border-radius: 0 7px 7px 0;
-} */
+.handburgr_menu{
+    display: none;
+}
+/* 
 .toggle_button {
     position: relative;
     width: 45px;
@@ -197,23 +176,53 @@ header a{
     display: none;
     background: #333;
     margin: 8px 0;
-  }
-  @media(max-width:40rem){
+  } */
+
+@media(max-width:45rem){
+    .main_nav{
+        display: none;
+        width: 270px;
+    }
+    .main_section{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .handburgr_menu{
+        display: inline-block;
+    }
+    .bars{
+        width: 35px;
+        height: 3px;
+        background-color: black;
+        margin: 6px; 
+        display: block; 
+        position: relative;
+        right: 20px;
+    }
+}
+@media(max-width:29rem){
+    .searchbar input{
+        width: 130px;
+    }
+    .searchbar_togglebtn{
+        padding: 10px 5px;
+    }
+    .main_section a{
+        font-size: 16px;
+    }
+}
+@media(max-width:24rem){
+    .main_section{
+        padding: 10px 20px;
+    }
+}
+
+
+/* @media(max-width:40rem){
     .toggle_button_bar{
         display: block;
     }
-    /* /* header .searchbar{
-        width: 30px;
-        right: 0;
-    } 
-    form input{
-        width: 10rem;
-    } */
-    .main_nav{
-        display: none;
-    }
-  }
-
+  }  */
 
 
 
