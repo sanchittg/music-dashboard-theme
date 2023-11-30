@@ -120,8 +120,8 @@ a.sidebar_list_item{
     background: #fff;
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.05);
     padding: 15px 30px;
-    /* position: fixed;
-    width: calc(100% - 300px); */
+    position: fixed;
+    width: calc(100% - 300px);
 }
 #interface .navigation .searchbar{
     display: flex;
@@ -223,7 +223,7 @@ a.sidebar_list_item{
 /* heading */
 .slogan{
     text-align: center;
-    margin-top: 25px;
+    margin-top: 90px;
     font-size: 30px;
 }
 .slogan h1{
