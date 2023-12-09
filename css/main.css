@@ -190,7 +190,6 @@ a.sidebar_list_item{
         margin: 6px; 
         display: block; 
         position: relative;
-        right: 20px;
     }
 }
 @media(max-width:31.5rem){
@@ -264,7 +263,9 @@ table ,tr, td{
     text-align: center;
     font-family:  Helvetica,sans-serif;
 }
-
+.handburgr_menu{
+    margin-right: 15px;
+}
 @media(max-width:60rem){
     .board .tableHead td{
         font-size: 20px;
@@ -285,6 +286,7 @@ table ,tr, td{
     }
     #interface .navigation{
         width: calc(100% - 270px);
+        padding: 15px 10px;
     }
     #interface{
         width: calc(100% - 270px);
