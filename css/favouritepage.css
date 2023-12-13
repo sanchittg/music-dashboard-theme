@@ -1,0 +1,70 @@
+#toAddMusic{
+    border: none;
+    background-color: cornflowerblue;
+    height: 35px;
+    width: 120px;
+    margin-top: 5px;
+    color: antiquewhite;
+    font-size: 20px;
+}
+.slogan{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+#toAddMusic:active{
+    background-color: rgb(12, 89, 230);
+}
+#popup{
+    z-index: 11;
+    display: none;
+}
+#popupContainer{
+    background-color: #c21fde;
+    width: 500px;
+    height: 300px;
+    position: fixed;
+    left: 40%;
+    top: 30%;
+    border: 1px solid #620e71;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+
+}
+#popupHeading{
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+    color: #ffbdff;
+    font-size: 30px;
+}
+#popupContent{
+    font-size: 30px;
+}
+#popupContent input{
+    border: 1px solid #9C27B0;
+    margin: 20px;
+    font-size: 20px;
+    color: #5159ab;
+    font-family:  Georgia, Times, 'Times New Roman', serif;
+}
+#popupContent span{
+    color: beige;
+    margin-left: 10px;
+}
+#saveButton{
+    font-size: 20px;
+    margin: 30px 120px;
+    text-align: center;
+    width: 250px;
+    height: 40px;
+    background-color: #ed143d8f;
+    color: white;
+    font-weight: bold;
+    border: 1px solid purple;
+}
+#saveButton:active{
+    background-color: #eb5c768f;
+}
+.opencontainer{
+    display: block;
+}
