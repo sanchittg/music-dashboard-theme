@@ -5,10 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../css/favouritepage.css">
     <link rel="stylesheet" href="../css/main.css">
+  
     <title>tutorial</title>
 </head>
 <body>
+    <div id="popup">
+        <div id="popupContainer">
+            <h3 id="popupHeading">Enter Your Favourite Music</h3>
+            <div id="popupContent">
+               <span>Music : </span> <input type="text" id="newFavMusic"> <br>
+               <span>Artist   :</span> <input type="text" id="newArtist"> <br>
+               <button id="saveButton">Save</button>
+            </div>
+        </div>
+    </div>
     <nav class="main_nav">
         <ul class="sidebar">
             <div id="brandWithHamburger">
@@ -84,7 +96,7 @@
         </ul>
 </nav>
 <section id="interface">
-    <div class="navigation">
+    <div class="navigation" id="navigation">
         <div class="n1">
             <div id="handburgr_menu">
                 <div class="bars"></div>
@@ -104,10 +116,11 @@
       </div>
     </div>
     <div class="slogan">
-        <H1>#TOP MUSIC OF THE YEAR</H1>
+        <H1># FAVOURITE MUSIC</H1>
+        <button id="toAddMusic" class="addMusicButton">Add More</button>
     </div>
     <div class="board">
-        <table width = "100%" id="table">
+        <table width = "100%">
             <thead class="tableHead">
                 <tr>
                     <td class="rank">Ranking</td>
@@ -116,7 +129,7 @@
                     <td class="views">Views</td>
                 </tr>
             </thead>
-            <tbody class="tableBody" id="tbody">
+            <tbody class="tableBody" id="tBody">
                 <tr>
                     <td>#1</td>
                     <td>Aapna Bana Le</td>
@@ -144,7 +157,7 @@
                 <tr>
                     <td>#5</td>
                     <td>Saiyaan</td>
-                    <td>Kailah Kher</td>
+                    <td>Kailash Kher</td>
                     <td>11.2cr.</td>
                 </tr>
                 <tr> 
@@ -166,44 +179,14 @@
                     <td>7.44cr.</td>
                 </tr>
                 <tr>
-                    <td>#9</td>
+                    <td id="rankingNum">#9</td>
                     <td>Mnajha</td>
                     <td>Vishal Mishra</td>
                     <td>5.4cr.</td>
                 </tr>
-                <tr>
-                    <td>#9</td>
-                    <td>Sajde</td>
-                    <td>Arijit Singh</td>
-                    <td>4cr.</td>
-                </tr>
-                <tr>
-                    <td>#10</td>
-                    <td>Khairiyat</td>
-                    <td>Arijit Singh</td>
-                    <td>3.5cr.</td>
-                </tr>
-                <tr>
-                    <td>#11</td>
-                    <td>Dhek Lena</td>
-                    <td>Arman Malik</td>
-                    <td>2.4cr.</td>
-                </tr>
-                <tr>
-                    <td>#12</td>
-                    <td>Baarish</td>
-                    <td>Arijit Singh</td>
-                    <td>1.34cr.</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
 </section>
+
 <script src="../Javascript/main.js"></script>
+<script  src="../Javascript/favuritepage.js"></script>
 </body>
 </html>
-
-
-
-
-
